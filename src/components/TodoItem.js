@@ -1,3 +1,5 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import styles from './TodoItem.module.css';
 
@@ -42,7 +44,7 @@ const TodoItem = (props) => {
           onChange={() => props.handleChangeProps(id)}
         />
         <button type="button" onClick={() => props.deleteTodoProps(id)}>
-         Delete
+          Delete
         </button>
         <span style={completed ? completedStyle : null}>{title}</span>
       </div>
